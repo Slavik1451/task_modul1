@@ -1,9 +1,9 @@
 def send_email(message, recipient, sender="university.help@gmail.com"):
     tuple_ = ('.com', '.ru', '.net')
     if ('@' not in recipient or '@' not in sender
-        or not recipient.endswith(tuple_)
-        or not sender.endswith(tuple_)):
-
+            or not recipient.endswith(tuple_)
+            or not sender.endswith(tuple_)):
+            
         print(f'Невозможно отправить письмо с адреса {sender} на адрес {recipient}')
 
     elif sender == recipient:
